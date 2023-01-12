@@ -1,0 +1,356 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Non-local correlations in strongly correlated quantum systems
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+A plethora of intringuing phenoma such as the Mott transition and quantum
+ criticality emerge in strongly correlated electronic systems.
+ However, the theoretical description and understanding of such systems
+ is challenging since most of these effects can not be described through
+ a perturbation theory in terms of the Coulomb interaction or a standard
+ mean-field theory.
+ A big step foward was achieved with the formulation of the dynamical mean-field
+ theory (DMFT) [1], a nonperturbative approach, which is a mean-field theory
+ in spatial coordinates but fully accounts local quantum fluctuations.
+ Within DMFT perspective we are able to describe, for example, the Mott
+ transition at zero temperature and its respective crossover character at
+ finite ones.
+ Besides the great success of DMFT, going beyond it becomes necessary since
+ some fascinating phenoma like quantum criticality originates from non-local
+ correlations, which are by construction beyond DMFT.
+ A couple of methods to include non-local correlations into the description
+ of strongly correlated systems were proposed over the years [].
+ In this research proposal, we are going to focus into the so-called dynamical
+ vertex approximation (D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A), a diagrammatic extension of DMFT.
+\end_layout
+
+\begin_layout Standard
+In a nutshell, DMFT assumes that the lattice self-energy, also called one
+ particle irreducible vertex, is purely local.
+ This approach is non-perturbative since all the local Feynman diagrams
+ are take into account.
+ The very ideia of the diagrammatic extensions is to extend the locality
+ of the one particle irreducible vertex to the next level, i.e., the two particle
+ level.
+ In particular, in D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A approach, the so-called fully irreducible two particle vertex in an specific
+ channel is assumed to be purely local, and from this assumption we are
+ able to systematically include non-local effects on top of DMFT solutions.
+ Within D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A, we treat the system in the thermodynamic limit which allow us to have
+ a full resolution of the momentum space.
+ For two-dimensional systems, the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-correction formulation guarantees the fulfillment of the Mermin-Wagner
+ theorem, a key ingridient to the study of the role of fluctuations of emerging
+ zero temperature long range orders at finite temperatures.
+ The bottleneck of this approach lies on the fact that the leading stability
+ needs to be known a priori, what does not allow us to explore the competition
+ between different possible leading stabilities in the system.
+\end_layout
+
+\begin_layout Standard
+In the next sections we discuss the two main systems we are going to study
+ through the D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A approach.
+\end_layout
+
+\begin_layout Section
+Quantum criticality in triangular lattice systems
+\end_layout
+
+\begin_layout Standard
+Experimental studies on several organic charge transfer salts [] suggest
+ that the structure of these compounds is well described by independent
+ two-dimensional layers with nearly isotropic triangular lattice structure,
+ and exhibit strong electronic correlations.
+ In addition, some experiments show no sign of spin ordering at low temperatures
+, an indicative that these compounds are promising candidates to host a
+ spin liquid ground state [].
+ In the theoretical perspective, these organic compounds seem also to be
+ well described by a single band Hubbard model [], what makes the study
+ of this model in a triangular lattice fundamental to our understanding
+ of the physics of these compounds.
+\end_layout
+
+\begin_layout Standard
+In the triangular lattice Hubbard model, the interplay between strong correlatio
+ns and geometric frustration is the route to a rich phenomenology.
+ At zero temperature, the study of this system at half-filled case using
+ infinite-system density matrix renormalization group (iDMRG) showed that
+ as a function of the on-site Coulomb repulsion, a metal-insulator transition
+ takes place, being followed by the emergence of an intriguing insulating
+ state without time-reversal symmetry at intermediate interaction strength,
+ before the system becomes a magnetic insulator at strong interaction regime[].
+ At finite temperature, the study of the same system [] combining the minimally
+ entangled thermally typical states (METTS) [], a wave function based method,
+ with Green's function based methods like connected-determinant diagrammatic
+ Monte Carlo (DiagMC) and cellular dynamical mean-field theory (CDMFT),
+ showed also the existence of metal-insulator crossover, followed by the
+ enhancement of chiral correlations being consistent with a chiral spin
+ liquid ground state as well as spin correlations of a non-coplanar tetrahedral
+ order at intermediate coupling regime.
+ At strong coupling regime, the spin correlations corresponding to the classical
+ coplanar Neel order predicted for the Heisenberg model in the triangular
+ lattice at zero temperature becomes dominant in the system.
+ Here is important to emphasize that the prediction of magnetism at finite
+ temperature in the two-dimensional system by METTS is a consequence of
+ the finite size system character of this technique.
+ As already mentioned before, for a consistent description of the real physical
+ system, no magnetic order must be observed at finite temperatures.
+\end_layout
+
+\begin_layout Standard
+The previous results discussed above show that the triangular lattice Hubbard
+ model has a well-known magnetic leading stability as a function of the
+ on-site Coulomb interaction at zero temperature, which is the key ingridient
+ that motivates us to study the finite temperature phase diagram of this
+ model through the D
+\begin_inset Formula $\text{\ensuremath{\Gamma}}A$
+\end_inset
+
+ technique.
+ Firstly, as already pointed out before, D
+\begin_inset Formula $\text{\ensuremath{\Gamma}}$
+\end_inset
+
+A guarantees the absence of long range order in two-dimensional sytems,
+ and secondly, it also allows us to systematically incorporate non-local
+ electronic correlations into the description of the system in the thermodynamic
+al limit.
+ These two feautures of D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A indicate that it is a powerful technique to explore the effects of the
+ zero temperature magnetic critical point in this model at finite temperatures,
+ throught the inspection of the role of the spin fluctuations due to this
+ critical point to thermodynamical quantities.
+\end_layout
+
+\begin_layout Standard
+In the first part of this project, we are going to study the phase diagram
+ of the fully frustrated triangular lattice Hubbard model in the half-filled
+ case in the presence of the non-local correlations through the D
+\begin_inset Formula $\text{\ensuremath{\Gamma}}$
+\end_inset
+
+A technique.
+ Firstly, we aim to determine how the Mott crossover in the model predicted
+ by DMFT is affected by the effect of the non-local correlations through
+ the analyzis of the behavior of the quasi-particle properties, the potential
+ and kinectic energy and also the low-frquency behavior of the local self-energy.
+ Secondly, we are going to study the criticality of the model through the
+ analyzis of the maximum of the lattice susceptibility as function of the
+ temperature and the on-site Coulomb repulsion, and extract the behavior
+ of the magnetic correlation length as function of the same parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+Once we determine the phase diagram of the fully frustrated triangular lattice
+ Hubbard model in the half-filled case, we aim to extend our analyzis to
+ the electron and hole dopped case, in order to understand how the emergence
+ of the non-local correlation is affected by the dopping of the system,
+ and how the previous determined critical regimes are influenced by this
+ control parameter.
+ In addition, we will analyze the emergence of new possible critial regimes
+ in this model under dopping.
+ 
+\end_layout
+
+\begin_layout Standard
+With the phase diagram of the model respecting the Mermin-Wagner theorem
+ well-stablished, at least in the D
+\begin_inset Formula $\text{\ensuremath{\Gamma}}A$
+\end_inset
+
+perspective, we will focus in the analyzis of the phase diagram for realistic
+ materials.
+ In this part of the project we will study a non-fully frustrated triangular
+ lattice Hubbard model at half-filled and electrons and hole doped cases,
+ aiming to describe some experimentally features observed for some organic
+ charge transfer salts.
+ 
+\end_layout
+
+\begin_layout Section
+The role of spin fluctuation in the Fermi liquid state of Sr
+\begin_inset Formula $_{2}$
+\end_inset
+
+RuO
+\begin_inset Formula $_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The layered perovskite Sr
+\begin_inset Formula $_{2}$
+\end_inset
+
+RuO
+\begin_inset Formula $_{4}$
+\end_inset
+
+ is an important model system for strongly correlated systems.
+ In particular, the normal state of Sr
+\begin_inset Formula $_{2}$
+\end_inset
+
+RuO
+\begin_inset Formula $_{4}$
+\end_inset
+
+ has been attracted much interest since it is one of the cleanest oxides
+ Fermi liquids [].
+ In this material, the Fermi surface can be resolved to great precision
+ by ARPES experiments and described accurately through DMFT calculations
+ [], elucidating that a local approach of the correlations describes resonably
+ the physics of this compound.
+ However, neutron scattering [] and nuclear magnetic resonance [] experiments
+ show that strong magnetic fluctuations are present in the low-temperature
+ Fermi-liquid state.
+ In this scenario, it is natural to expect a strong momentum dependence
+ of the self-energy due to these spin fluctuations, contradicting the scenario
+ of purely local correlations.
+\end_layout
+
+\begin_layout Standard
+In this project we aim to investigate the puzzling dichotomy in Sr
+\begin_inset Formula $_{2}$
+\end_inset
+
+RuO
+\begin_inset Formula $_{4}$
+\end_inset
+
+, namely the coexistence of strong spin fluctuations present in the Fermi
+ liquid phase of this material and the high degree of locality of its one-partic
+le self-energy.
+ To sutdy this problem we are going to apply a cutting-edge diagrammatic
+ extension of DMFT, the (ab-initio) dynamical vertex approximation (Abinitio-D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A) [] for this system.
+ The Abinitio-D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A technique allows us to generate all local DMFT correlations and all nonlocal
+ GW contributions but also nonlocal correlations beyond.
+ During the analysis of the system through Abinitio-D
+\begin_inset Formula $\Gamma$
+\end_inset
+
+A, we intend to implement a modification to its original formulation, by
+ imposing additional sum rules (Moriya corrections) that allow us to observe
+ the tendency of awakening of ordering due to the presence of the nonlocal
+ correlations, and in the case of two-dimensions, a completely quench of
+ long range orders in accordance to the Mermin-Wagner theorem.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,230 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Relation between the components of the self-energy in the real and imaginary
+ frequency axis
+\end_layout
+
+\begin_layout Standard
+The spectral definition of the real frequency self-energy is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+\text{Re}\Sigma\left(\omega\right) & =\text{P}\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\omega^{'}-\omega}\label{eq1}
+\end{alignat}
+
+\end_inset
+
+ while for the imaginary frequecy one, it is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+\Sigma\left(i\omega_{n}\right) & =\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\omega^{'}-i\omega_{n}}.\label{eq2}
+\end{alignat}
+
+\end_inset
+
+Writting explicitly the real and imaginary component of the Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we find that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\text{Re}\Sigma\left(i\omega_{n}\right) & =\int\frac{d\omega^{'}}{\pi}\frac{\text{\omega^{'}Im\Sigma\left(\omega^{'}\right)}}{\left(\omega^{'}\right)^{2}-\omega_{n}^{2}},\label{eq3}\\
+\frac{\text{Im}\Sigma\left(i\omega_{n}\right)}{\omega_{n}} & =\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\left(\omega^{'}\right)^{2}-\omega_{n}^{2}}.\label{eq4}
+\end{align}
+
+\end_inset
+
+Now , taking the limit in which 
+\begin_inset Formula $\omega_{n}\rightarrow0$
+\end_inset
+
+ in the real part of the imaginary frequency self-enegy we show that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\text{Re}\Sigma\left(i\omega_{n}\rightarrow0\right) & =\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\omega^{'}}\nonumber \\
+ & =\text{Re}\Sigma\left(\omega=0\right).\label{eq5}
+\end{align}
+
+\end_inset
+
+Calculating the derivative of the Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with respect to the real frequency 
+\begin_inset Formula $\omega$
+\end_inset
+
+ evaluated at 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+ we find that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left.\partial_{\omega}\text{Re}\Sigma\left(\omega\right)\right|_{\omega=0} & =\left.\text{P}\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\left(\omega^{'}-\omega\right)^{2}}\right|_{\omega=0}\nonumber \\
+ & =\text{P}\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\left(\omega^{'}\right)^{2}}\nonumber \\
+ & =\left.\int\frac{d\omega^{'}}{\pi}\frac{\text{Im\Sigma\left(\omega^{'}\right)}}{\left(\omega^{'}\right)^{2}-\omega_{n}^{2}}\right|_{\omega_{n}\rightarrow0}\nonumber \\
+ & =\left.\frac{\text{Im}\Sigma\left(i\omega_{n}\right)}{\omega_{n}}\right|_{\omega_{n}\rightarrow0}\label{eq6}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Eqs.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ allow us to extract Fermi liquid parameters as the quasiparticle weight
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{alignat}{1}
+Z & =\left[1-\left.\partial_{\omega}\text{Re}\Sigma\left(\omega\right)\right|_{\omega\rightarrow0}\right]^{-1}\nonumber \\
+ & =\left[1-\left.\frac{\text{Im}\Sigma\left(i\omega_{n}\right)}{\omega_{n}}\right|_{\omega_{n}\rightarrow0}\right]^{-1},\label{eq7}
+\end{alignat}
+
+\end_inset
+
+and the effective chemical potential
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{\mu} & =\mu-\text{Re}\Sigma\left(\omega=0\right)\nonumber \\
+ & =\mu-\text{Re}\Sigma\left(i\omega_{n}\rightarrow0\right).\label{eq8}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
